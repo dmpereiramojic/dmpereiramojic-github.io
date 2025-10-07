@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josh Burk, Ph.D. | William & Mary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --wm-green: #115740;
+            --wm-gold: #B9975B;
+            --spirit-gold: #F0B323;
+            --light-gray: #f7f7f7;
+            --dark-text: #333333;
+            --light-text: #ffffff;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-gray);
+            color: var(--dark-text);
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: var(--wm-green);
+            color: var(--light-text);
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 5px solid var(--wm-gold);
+        }
+
+        header h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 2.5rem;
+            margin: 0;
+            color: var(--light-text);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 5px 0 0 0;
+            color: var(--light-text);
+        }
+        
+        header .wm-logo {
+            max-width: 150px;
+            margin-bottom: 1rem;
+        }
+
+        nav {
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            text-decoration: none;
+            color: var(--wm-green);
+            margin: 0 15px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            background-color: var(--wm-gold);
+            color: var(--light-text);
+        }
+
+        h2 {
+            font-family: 'Merriweather', serif;
+            color: var(--wm-green);
+            border-bottom: 2px solid var(--wm-gold);
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+
+        .profile-section {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .profile-pic {
+            max-width: 200px;
+            height: auto;
+            border-radius: 50%;
+            border: 5px solid var(--wm-gold);
+        }
+
+        .profile-info {
+            flex: 1;
+        }
+
+        .cv-button {
+            display: inline-block;
+            background-color: var(--wm-green);
+            color: var(--light-text);
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            margin-top: 15px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .cv-button:hover {
+            background-color: var(--wm-gold);
+            transform: translateY(-2px);
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+
+        .publication-list li {
+            margin-bottom: 15px;
+        }
+        
+        #contact a {
+            color: var(--wm-green);
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        #contact a:hover {
+            color: var(--wm-gold);
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: var(--wm-green);
+            color: var(--light-text);
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="https://www.wm.edu/" target="_blank" rel="noopener noreferrer">
+                <img src="wm_cypher_gold.png" alt="William & Mary Cypher Logo" class="wm-logo">
+            </a>
+            <h1>Josh Burk, Ph.D.</h1>
+            <p>Professor, Department of Psychological Sciences</p>
+            <p>Provost Liaison for Academic Innovation</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#students">Students</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main class="container">
+        <section id="about">
+            <div class="profile-section">
+                <img src="Burk-pic.jpg" alt="Professor Josh Burk" class="profile-pic">
+                <div class="profile-info">
+                    <h2>About Me</h2>
+                    <p>I am a Professor in the Department of Psychological Sciences and currently serve as the Provost Liaison for Academic Innovation at William & Mary. My research focuses on the neural basis of attention, learning, and memory.</p>
+                    <a href="https://wmit-pages-prod.s3.amazonaws.com/wp-content/uploads/sites/710/2025/07/27171438/Burk-CV-June-2025-2.pdf" class="cv-button" target="_blank">View Full CV</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="positions">
+            <h2>Academic and Administrative Positions</h2>
+            <ul>
+                <li><strong>2025-current:</strong> Provost Liaison for Academic Innovation</li>
+                <li><strong>2017-current:</strong> Professor, Department of Psychological Sciences</li>
+                <li><strong>2016-current:</strong> Faculty Affiliate, Program in Neuroscience</li>
+                <li><strong>2022-2025:</strong> Provost Faculty Fellow</li>
+                <li><strong>2016-2022:</strong> Chair, Department of Psychological Sciences</li>
+                <li><strong>2011-2015:</strong> Director, Neuroscience Program</li>
+            </ul>
+        </section>
+
+        <section id="research">
+            <h2>Research Interests</h2>
+            <p>My general area of research interest is the neural basis of attention, learning, and memory. We have several current lines of research related to these topics:</p>
+            <ol>
+                <li><strong>Role of the cholinergic system in attention:</strong> Our work suggests that cholinergic muscarinic receptors, particularly the M1 receptor, are important for mediating the effects of cortical acetylcholine on attention.</li>
+                <li><strong>Role of orexins in attention:</strong> In collaboration with Dr. Jim Fadel, we are testing the role of the orexin system in attention, particularly its projection to the basal forebrain.</li>
+                <li><strong>Role of orexins in schizophrenia:</strong> We are exploring whether dual orexin receptor antagonists (DORAs) can reverse attentional deficits in animal models of schizophrenia.</li>
+                <li><strong>Autism Research:</strong> I am a co-PI in an autism lab with Professor Cheryl Dickter. You can find more information <a href="https://sites.google.com/view/wm-autism-lab/home" target="_blank">here</a>.</li>
+            </ol>
+        </section>
+
+        <section id="publications">
+            <h2>Selected Recent Publications</h2>
+            <ul class="publication-list">
+                <li>Dickter, C. L. & Burk, J. A. (in press) Implicit and explicit attitudes towards autistic individuals: a review. <em>Autism in Adulthood</em>.</li>
+                <li>Bierce LF, Dickter CL, Burk JA (in press) Simulated contact and attitudes toward autistic adults: effects of gender of the autistic adult and mediation by intergroup anxiety. <em>Journal of Autism and Developmental Disorders</em>.</li>
+                <li>Dickter CL, Chang I, Burk JA, Bravo AJ (2025) Autistic traits, emotion regulation, social anxiety, drinking to cope, and problematic alcohol use: A cross-cultural examination among young adults from seven countries. <em>Substance Use and Misuse, 60,</em> 766-774.</li>
+                <li>Maness EB, Blumenthal SA, Burk JA (2023) Dual orexin/hypocretin receptor antagonism attenuates NMDA receptor hypofunction-induced attention deficits in a rat model of schizophrenia. <em>Behavioural Brain Research, 450,</em> 114497.</li>
+            </ul>
+        </section>
+
+        <section id="students">
+            <h2>Current Lab Students</h2>
+            <ul>
+                <li>Adelaide Griffey</li>
+                <li>Rose Hsieh</li>
+                <li>Vi Nguyen</li>
+                <li>Lillian Shee</li>
+                <li>Rayaan Siddiqui</li>
+            </ul>
+        </section>
+        
+        <section id="courses">
+            <h2>Courses</h2>
+            <p><strong>Fall 2025:</strong> PSYC 445 Psychopharmacology</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <p>
+                <strong>Email:</strong> <a href="mailto:jabur2@wm.edu">jabur2@wm.edu</a><br>
+                <strong>Office Phone:</strong> <a href="tel:757-221-3882">757-221-3882</a><br>
+                <strong>Address:</strong><br>
+                <a href="https://www.google.com/maps/search/?api=1&query=1159+Integrated+Science+Center%2C+Williamsburg%2C+VA+23187" target="_blank">
+                1159 Integrated Science Center<br>
+                William & Mary<br>
+                Williamsburg, VA 23187
+                </a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Josh Burk | William & Mary</p>
+        </div>
+    </footer>
+
+</body>
+</html>
